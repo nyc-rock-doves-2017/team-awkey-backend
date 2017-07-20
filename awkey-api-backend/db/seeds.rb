@@ -14,6 +14,7 @@ end
 
 end
 
-Comment.create(content: Faker::Hipster.sentence, commenter_id: User.first.id, photo_id: Photo.first.id)
-
+5.times do
+  Comment.create(content: Faker::Hipster.sentence, commenter_id: User.first.id, photo_id: Photo.first.id)
+end
 Like.create(liker_id: User.last.id, photo_id: Photo.first.id)
