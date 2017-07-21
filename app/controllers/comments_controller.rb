@@ -16,7 +16,8 @@ class CommentsController < ApplicationController
   end
 
   def delete
-
+    @comment = Comment.find_by(comment_id: params[:commentId])
+    @comment.destroy!
   end
 
   private
