@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   end
   resources :photos, except: [:new, :edit, :delete] do
     resources :comments, except: [:edit]
-    # resources :likes, except: :edit
+    resources :likes, only: :create
   end
 end
