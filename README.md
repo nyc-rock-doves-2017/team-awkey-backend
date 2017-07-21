@@ -13,7 +13,7 @@ The group used GitHub, Trello, and Slack.
   GET: "/photos"
 ```
 
-###### 2) To get all the photos possible:
+###### 2) To get all the photos possible for a particular user:
 ```
   GET: "/users/[user_id]/photos"
 ```
@@ -64,5 +64,9 @@ https://github.com/thoughtbot/paperclip
 
 http://getbootstrap.com/
 
+3) Rails::API [GitHub user: rails-api]
+
+https://github.com/rails-api/rails-api
+
 ### Other Notes
-This README is not yet finalized. Please check back soon for more information!
+This README is not yet finalized.
