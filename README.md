@@ -3,17 +3,50 @@
 ### Purpose
 This is the backend component of a practice project to store photos, users, comments, and likes.
 
+### Group Workflow Process
+The group used GitHub, Trello, and Slack.
+
 ### To Use
 When requesting photos, this is the sample format of the JSON file:
 ```
-
+photos = [
+  {photoInfo: {
+  id: [Integer as a string],
+  url: [String],
+  uploaderId: [Integer as a string]
+  },
+  photoComments:[{
+      id: [Integer as a string],
+      commenterId: [Integer as a string],
+      photoId: [Integer as a string],
+      content: [String]
+      },
+      {
+      id: [Integer as a string],
+      commenterId: [Integer as a string],
+      photoId: [Integer as a string],
+      content: [String]
+      },
+      {
+      id: [Integer as a string],
+      commenterId: [Integer as a string],
+      photoId: [Integer as a string],
+      content: [String]
+      }
+    ],
+  photoLikes: [Integer]
+  }
+]
 ```
-### Group Workflow Process
-The group followed workflow using GitHub, Trello, and Slack.
 
 ### Additional Resources
-1) Paperclip by thoughtbot (GitHub below:)
+1) Paperclip [GitHub user: thoughtbot]
 
 https://github.com/thoughtbot/paperclip
 
-This README is under construction - please check back soon for a complete description!
+2) Bootstrap [GitHub user: twbs]
+
+http://getbootstrap.com/
+
+### Other Notes
+This README is not yet finalized.
