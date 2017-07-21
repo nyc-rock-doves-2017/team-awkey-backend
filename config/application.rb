@@ -20,10 +20,9 @@ module AwkeyApiBackend
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
-    config.api_only = false
     config.action_dispatch.default_headers = {
-   Access-Control-Allow-Origin => '*',
-   Access-Control-Request-Method => %w{GET POST OPTIONS}.join(",")
+   'Access-Control-Allow-Origin' => '*',
+   'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
  }
 
     # Settings in config/environments/* take precedence over those specified here.
