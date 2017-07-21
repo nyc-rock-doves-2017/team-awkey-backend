@@ -31,6 +31,7 @@ gem 'dotenv-rails'
 gem 'faker'
 gem 'aws-sdk'
 gem 'pry-rails', group: :development
+gem 'rack-cors', '~> 0.3.1'
 
 
 gem "paperclip", "~> 5.0.0"
