@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: 'static#index'
+  resources :sessions, only: :create
   resources :users, only: :create do
     resources :photos, only: :index
   end
