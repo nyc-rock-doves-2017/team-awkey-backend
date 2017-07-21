@@ -19,8 +19,13 @@ class Photo < ApplicationRecord
     comments = self.comments
     likes = self.likes.count
     photoJson[:photoInfo] = self.as_json
-    photoJson[:photoComments] = comments.as_json
+    if comments.nil?
+      photoJson[:photoComments] = {}
+    else
+      photoJson[:photoComments] = comments.as_json
+    end
     photoJson[:photoLikes] = likes.as_json
     photoJson
   end
+
 end
