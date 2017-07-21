@@ -12,6 +12,7 @@ class CommentsController < ApplicationController
     @photo.comments.create(commenter_id: params[:newComment][:userId],
                             content: params[:newComment][:content]
     )
+    render json: @photo.comments.last.id
   end
 
   def delete
