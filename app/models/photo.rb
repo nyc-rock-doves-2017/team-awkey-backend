@@ -7,7 +7,7 @@ class Photo < ApplicationRecord
 
 
   def s3_credentials
-    {:bucket => ENV['AWS_PROJECT'], :access_key_id => ENV['AWS_KEY'], :secret_access_key => ENV['AWS_SECRET'], :s3_region => ENV['AWS_REGION']}
+    {:bucket => ENV['AWS_PROJECT'], :access_key_id => ENV['AWS_KEY'], :secret_access_key => ENV['AWS_SECRET'], :s3_region => 'us-east-1'}
   end
 
   def url
