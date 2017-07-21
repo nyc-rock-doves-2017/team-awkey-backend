@@ -64,5 +64,9 @@ https://github.com/thoughtbot/paperclip
 
 http://getbootstrap.com/
 
+3) Rails::API [GitHub user: rails-api]
+
+https://github.com/rails-api/rails-api
+
 ### Other Notes
 This README is not yet finalized.
