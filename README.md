@@ -6,10 +6,26 @@ This is the backend component of a practice project to store photos, users, comm
 ### Group Workflow Process
 The group used GitHub, Trello, and Slack.
 
-### To Use
-When requesting photos, this is the sample format of the JSON file:
+### Endpoints:
+
+###### 1) To get all the photos possible:
 ```
-photos = [
+  GET: "/photos"
+```
+
+###### 2) To get all the photos possible:
+```
+  GET: "/users/[user_id]/photos"
+```
+
+###### 3) To create a new user
+```
+  POST: "/users"
+```
+
+### Structure of JSON request:
+```
+[
   {photoInfo: {
   id: [Integer as a string],
   url: [String],
@@ -49,4 +65,4 @@ https://github.com/thoughtbot/paperclip
 http://getbootstrap.com/
 
 ### Other Notes
-This README is not yet finalized.
+This README is not yet finalized. Please check back soon for more information!
