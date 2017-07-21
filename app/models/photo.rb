@@ -25,7 +25,6 @@ class Photo < ApplicationRecord
       photoJson[:photoComments] = comments.as_json
     end
     photoJson[:photoLikes] = likes.as_json
-    photoJson
   end
 
 end
