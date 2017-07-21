@@ -11,18 +11,13 @@ class PhotosController < ApplicationController
   def show
     photo = Photo.find_by(id: params[:id])
     if photo == nil
-      render json: status 400
+      render json: {status: 400}
     else
       render json: photo.convert_to_json
     end
   end
 
   def create
-    params[:photoInfo] = {
-      id: "1",
-      url: "sdfasdfsda",
-      uploader_id: "3333"
-    }
     @photo = Photo.new(photo_params)
     if @photo.save
       status 200
