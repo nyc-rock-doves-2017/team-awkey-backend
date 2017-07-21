@@ -15,6 +15,12 @@ end
 end
 
 5.times do
+  photo = Photo.new(uploader_id: User.last.id)
+  photo.photo = Faker::Avatar.image
+  photo.save
+end
+
+5.times do
   Comment.create(content: Faker::Hipster.sentence, commenter_id: User.first.id, photo_id: Photo.first.id)
 end
 Like.create(liker_id: User.last.id, photo_id: Photo.first.id)
