@@ -8,7 +8,11 @@ class CommentsController < ApplicationController
   end
 
   def create
-    # @comment = [params]
+    @photo = Photo.find_by(id: params[:photo_id])
+    @photo.comments.create(commenter_id: params[:newComment][:userId],
+                            content: params[:newComment][:content]
+    )
+
   end
 
   def delete
@@ -17,5 +21,6 @@ class CommentsController < ApplicationController
 
   private
   def comment_params
+    # params.require(:newComment).permit(:content, :commenterId)
   end
 end
